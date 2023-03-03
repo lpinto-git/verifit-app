@@ -13,7 +13,7 @@ docker build -t verifit-app .
 ````
 Spin up the resulting container
 ````
-docker run -p 8000:8000 -itd <CONTAINER_ID>
+docker run -p 8000:8000 -itd <IMAGE_ID>
 ````
 
 Bootstrap:
