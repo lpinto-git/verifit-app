@@ -1,8 +1,8 @@
 package org.fitness.service;
 
 import lombok.val;
-import org.fitness.VerifitApplication;
 import org.fitness.UserDetailsHelper;
+import org.fitness.VerifitApplication;
 import org.fitness.model.UserDetails;
 import org.fitness.repository.UserDetailsRepository;
 import org.junit.jupiter.api.AfterEach;
@@ -33,7 +33,7 @@ public class AttendanceServiceTest {
     UserDetailsRepository userDetailsRepository;
 
     @AfterEach
-    void setup() {
+    void tearDown() {
         userDetailsRepository.delete(userDetails);
     }
 
